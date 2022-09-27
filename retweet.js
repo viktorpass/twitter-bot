@@ -35,4 +35,4 @@ function botInit(){
     
 
 }
-module.exports = botInit();
+module.exports = botInit;
