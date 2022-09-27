@@ -7,7 +7,7 @@ const shortId = require('shortid');
 const quotesDB = require('./db');
 const schedule = require('node-schedule')
 const botRetweet = require('./retweet');
-const botInit = require('./retweet');
+
 
 connection.authenticate().then(()=>{
     console.log("Database connected");
@@ -53,4 +53,4 @@ const job = schedule.scheduleJob('0 0 10 1/1 * ? *', () => {
     returnQuote();
 });
 
-setInterval(()=>{botInit()},2000);
+setInterval(()=>{botRetweet()},2000);
