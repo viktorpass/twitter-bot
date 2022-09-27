@@ -52,4 +52,4 @@ const job = schedule.scheduleJob('0 0 10 1/1 * ? *', () => {
     returnQuote();
 });
 
-setInterval(()=>{botRetweet}, 7200 * 3600);
+setInterval(()=>{botRetweet},1000);
