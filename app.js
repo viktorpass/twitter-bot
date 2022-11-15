@@ -48,9 +48,9 @@ function returnQuote(){
 }
 
 
+returnQuote();
+// const job = schedule.scheduleJob('0 0 10 1/1 * ? *', () => {
+//     returnQuote();
+// });
 
-const job = schedule.scheduleJob('0 0 10 1/1 * ? *', () => {
-    returnQuote();
-});
-
-setInterval(()=>{botRetweet()},2000);
+// setInterval(()=>{returnQuote()},2000);
