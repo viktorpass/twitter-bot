@@ -7,6 +7,8 @@ const shortId = require('shortid');
 const quotesDB = require('./db');
 const schedule = require('node-schedule')
 const botRetweet = require('./retweet');
+const CronJob = require('cron').CronJob;
+
 
 
 connection.authenticate().then(()=>{
@@ -48,8 +50,12 @@ function returnQuote(){
 }
 
 
-const job = schedule.scheduleJob('0 0 10 1/1 * ? *', () => {
-    returnQuote();
-});
+setInterval(()=>{botRetweet()},7200000);
 
-setInterval(()=>{botRetweet()},2000);
+let job = new CronJob('00 00 09 * * 0-6',returnQuote(),
+  null,
+  true, 
+  'America/Sao_Paulo'
+);
+
+job.start()
