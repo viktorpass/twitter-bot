@@ -50,7 +50,7 @@ function returnQuote(){
 }
 
 
-setInterval(()=>{botRetweet()},7200000);
+setInterval(()=>{botRetweet()},900000);
 
 let job = new CronJob('00 00 09 * * 0-6',returnQuote(),
   null,
