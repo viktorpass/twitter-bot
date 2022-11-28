@@ -50,7 +50,7 @@ function returnQuote(){
     
 }
 
-
+returnQuote();
 cron.schedule('0 9 * * *', () => {
     returnQuote();
   });
