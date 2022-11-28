@@ -1,9 +1,7 @@
 /*let data = [
-    {
-        quote:"Ela é branca e gulosa tipo Magali.",
+    {   quote:"Ela é branca e gulosa tipo Magali.",
         author:"Yung Buda",
-    }
-    {
+    },{
         quote:"Árvores secas e cinzas congelam no ar quando eu paro o tempo.",
         author:"Yung Buda",
     },{

@@ -39,6 +39,7 @@ function returnQuote(){
                 })
             }else{
                 console.log("Already been posted");
+                returnQuote();
             }
         }).catch((error)=>{
             console.log(error)
@@ -48,9 +49,6 @@ function returnQuote(){
     })
     
 }
-
-
-setInterval(()=>{botRetweet()},900000);
 
 
 cron.schedule('0 9 * * *', () => {
