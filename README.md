@@ -9,4 +9,4 @@ Every day at 6:00AM the bot tweet a random quote.
 
 I had a database that returns the random quote for the API.  
 
-The feature that retweet tweet where contain "frase do dia" is turn off now, but it's work.
+The feature that retweet a tweet where contain "frase do dia" is turn off now, but it's work.
