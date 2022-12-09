@@ -40,6 +40,7 @@ function returnQuote(){
             }else{
                 console.log("Already been posted");
                 returnQuote();
+                
             }
         }).catch((error)=>{
             console.log(error)
@@ -50,7 +51,7 @@ function returnQuote(){
     
 }
 
-
+returnQuote();
 cron.schedule('0 9 * * *', () => {
     returnQuote();
   });
