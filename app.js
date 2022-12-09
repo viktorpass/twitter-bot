@@ -39,7 +39,6 @@ function returnQuote(){
                 })
             }else{
                 console.log("Already been posted");
-                returnQuote();
                 
             }
         }).catch((error)=>{
